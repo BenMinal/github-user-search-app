@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="header-container">
+      <div class="logo"><h1>devfinder</h1></div>
+      <div class="mode-toggle">
+        DARK
+      </div>
+    </div>
+    <div class="search-container">
+      <div class="search-icon"><img src="starter-code/assets/icon-search.svg" style="display: inline;" alt=""></div>
+      <div class="search-bar">
+        <input type="text" id="usernameGet" placeholder="Search GitHub username...">
+      </div>
+      <button type="button" id="btnGet" onclick="getUserDetails()">Search</button>
+    </div>
+    <div class="profile-container">
+      <div class="user-avatar"><img id="userAvatar" src="starter-code/assets/icon-256x256.png" style="display: inline; width: 117px" alt=""></div>
+      <div class="user-information">
+        <div class="user-basic-information">
+          <div class="primary-info">
+            <div class="user-name"><h1 id="returnedUsername">The Octocat</h1></div>
+            <div class="joined-date">Joined <span id="joinedDate">25 Jan 2011</span></div>
+            <div class="user-handle"><h3 id="userHandle">@octocat</h3></div>
+          </div>
+          <div class="user-bio" id="bio">This profile has no bio</div>
+        </div>
+        <div class="user-statistics">
+          <div class="repos">Repos<br><span id="reposReturned">8</span></div>
+          <div class="followers">Followers<br><span id="followersReturned">3938</span></div>
+          <div class="following">Following<br><span id="followingReturned">9</span></div>
+        </div>
+        <div class="user-links">
+          <div class="location bio-grid"><img class="icon" src="starter-code/assets/icon-location.svg" alt=""><span id="locationReturned">San Francisco</span></div>
+          <div class="twitter-link bio-grid"><img class="icon" src="starter-code/assets/icon-twitter.svg" alt=""><span id="twitterReturned">Not Available</span></div>
+          <div class="website-link bio-grid"><img class="icon" src="starter-code/assets/icon-website.svg" alt=""><span id="websiteReturned">Website</span></div>
+          <div class="github-link bio-grid"><img class="icon" src="starter-code/assets/icon-company.svg" alt=""><span id="githubReturned">@github</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
