@@ -156,6 +156,12 @@ a {
 .search-bar {
   font-size: 1.125rem;
   color: var(--clr--light-neutral-500);
+  min-width: 350px
+}
+
+#usernameGet {
+  border: none;
+  min-width: 350px;
 }
 
 button {
